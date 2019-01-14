@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browserName" value="firefox"/>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="com.tests.LoginPageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="LoginPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.tests.LoginPageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="LoginPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
