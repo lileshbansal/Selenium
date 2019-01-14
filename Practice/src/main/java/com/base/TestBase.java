@@ -36,13 +36,8 @@ public class TestBase {
 	@Parameters("browserName")
 	public void initialization(String browserName) {
 		
-<<<<<<< HEAD
-		////////String browserName = prop.getProperty("browser");
-		
-=======
 		//String browserName = prop.getProperty("browser");
-	
->>>>>>> branch 'master' of https://github.com/lileshbansal/Selenium.git
+		
 		if(browserName.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\lilbansa1\\Desktop\\ProtractorPractice\\chromedriver.exe");
 			driver = new ChromeDriver();
